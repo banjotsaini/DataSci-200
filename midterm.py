@@ -44,7 +44,7 @@ def display(deposits, top, bottom, left, right):
             x = i - left
             board[x][y] = "X"
 
-    lines = [" ".join(row) for row in board]
+    lines = ["".join(row) for row in board]
     return "\n".join(lines)
 
 
