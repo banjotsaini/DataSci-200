@@ -5,12 +5,12 @@ def count_retweets_by_username(tweet_list):
     username was retweeted.
     """
     
-    if tweets is None:
+    if tweet_list is None:
         return
     
     #create a list to hold all usernames we find
     usernames = []
-    for tweet in tweets:
+    for tweet in tweet_list:
         words = tweet.split()
         for i in range(len(words)):
             if words[i] == "RT":
